@@ -11,7 +11,7 @@ async function getPersonajes() {
       }
   }
   
-  /* Me falta agregar mas caracteristicas del personaje para mostrar en pantalla*/
+ 
   function displayCharacters(characters) {
       charactersContainer.innerHTML = ''; 
       characters.forEach(character => {
@@ -23,6 +23,8 @@ async function getPersonajes() {
               <p>Especie: ${character.species}</p>
               <p>Estado: ${character.status}</p>
               <p>Sexo: ${character.gender}</p>
+              <p>Origen: ${character.origin.name}</p>
+              <p>Locacion: ${character.location.name}</p>
           `;
           charactersContainer.appendChild(characterDiv);
       });
