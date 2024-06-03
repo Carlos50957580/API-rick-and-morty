@@ -29,5 +29,5 @@ async function getPersonajes() {
           charactersContainer.appendChild(characterDiv);
       });
   }
-  
+  //comentario prueba
   getPersonajes();
